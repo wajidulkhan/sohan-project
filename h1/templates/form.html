@@ -1,0 +1,27 @@
+
+<h1>Form Inset</h1><br>
+
+<form action="/form" class="table" title="Form Inset" method="POST"> 
+    {% csrf_token %}
+    <label>User Name : </label><br>
+    <input type="text" placeholder="user name" name="name"><br><br> 
+    <label>Roll :</label><br>
+    <input type="number" placeholder="roll" name="roll"><br><br>
+    <label>Reg :</label><br>
+    <input type="number" placeholder="reg" name="reg"><br><br>
+    <!-- <select class="option">
+        <option>Computer</option>
+        <option>Civil</option>
+        <option>Electrical</option>
+        <option>Power</option>
+        <option>Macatonics</option>
+        <option>Electronics</option>
+        <option>Madecial</option>
+        <option>Macanical</option>
+    </select><br><br> -->
+    <label>Department : </label><br>
+    <input type="Department" placeholder="Department" name="dep"><br><br>
+    <input type="submit" value="Submit"><br><br>
+</form>
+
+

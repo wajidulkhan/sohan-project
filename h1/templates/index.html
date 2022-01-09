@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+
+<title> HTML & CSS</title>
+<link rel="icon" href="cap.jpg" type="image/icon">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+<body>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Notice</a></li>
+<li><a href="#">Message</a></li>
+<li><a href="#">Watch</a></li>
+<li><a href="#">Notification</a></li>
+<li><a href="#">Group</a></li>
+<li class="about"><a class="active" href="#about">About</a></li>
+</ul>
+
+<img src ="{% static 'img/banner.jpg' %}" title="Banner Image"><br><br>
+<h1>Video</h1><br>
+<video title="Video" controls>
+ <source src="{% static 'video/video.mp4' %}" type="video/mp4" >
+</video><br><br>
+
+<h1>Audio</h1><br>
+<audio title="Audio" controls>
+<source src="{% static 'audio/audio.mp3' %}" type="audio/mp3" > 
+</audio><br><br>
+
+<h1>Italic</h1><br>
+<p class="itali" title="My Adress"><i>I am from Rajshahi polytechnic institute. My name is MD:Shohanur Rahman. I live in Rajshahi. My Home is 
+641,Terokhadia ,Cantonment , Rajpara , Rajshahi,Bangladesh. </i>
+</p><br><br>
+<h1>Bold </h1><br>
+<p class="bold" title="My Adress"><b>I am from Rajshahi polytechnic institute. My name is MD:Shohanur Rahman. I live in Rajshahi. My Home is 
+641,Terokhadia ,Cantonment , Rajpara , Rajshahi,Bangladesh. </b>
+</p><br><br>
+<h1>Strong</h1>
+<br>
+<p class="strong" title="My Adress"><strong>I am from Rajshahi polytechnic institute. My name is MD:Shohanur Rahman. I live in Rajshahi. My Home is 
+641,Terokhadia ,Cantonment , Rajpara , Rajshahi,Bangladesh. </strong>
+</p>
+<br><br><br><br>
+<h1>Form Design </h1><br>
+<form class="table"> 
+<label>User Name : </label><br>
+<input type="text" placeholder="user name"><br><br>
+<label>Passwoard : </label><br>
+<input type="password" placeholder="password"><br>
+<input type="submit" value="Submit">
+</form><br><br>
+
+<h1>Country</h1><br>
+<select class="option" title="Select"> 
+<option>Bangladesh</option>
+<option>India</option>
+<option>Canada</option>
+<option>Zimbabu</option>
+<option>Uganda</option>
+<option>Australia</option>
+</select><br><br>
+
+{% include 'form.html' %}
+{% include 'table.html' %}
+<footer>
+<p>Copy & paste  $Right</p>
+</footer>
+ 
+</body>
+</html>
